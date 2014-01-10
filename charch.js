@@ -1,8 +1,9 @@
+/*
+*
+*/
+
+
 window.onload = function(){
-	var style = document.createElement('style');
-	style.type = 'text/css';
-	style.innerHTML = '.charch_paragraph{text-align:justify;text-indent:2em;margin:0.5em 0 0.5em;-webkit-font-smoothing:subpixel-antialiased !important;font:normal 16px/1.70 "TIBch","Classic Grotesque W01","Helvetica Neue",Arial,"Hiragino Sans GB","STHeiti","Microsoft YaHei","WenQuanYi Micro Hei",SimSun,sans-serif;color:#444;margin-left:4px;margin-right:16px;}.charch_span{display:inline-block;width:16px;text-indent:0;}';
-	document.getElementsByTagName('head')[0].appendChild(style);
 	var posts = document.getElementsByClassName("charch_post");
 	var posts_num = posts.length;
 	
@@ -89,19 +90,11 @@ var charch_content = function(str){
 			s += "</p><p>"
 		}
 		else{	
-			if(pre_ch == 0 && (ch == 1 || ch == 3))
-				s += "<span> </span>";
-			else if(pre_ch == 3 && ch == 1)
-				s += "<span> </span>";
 			if(ch == 2){
 				s += "<span class='charch_span'>"+str[i]+"</span>";
 			}
 			else
 				s += "<span>"+str[i]+"</span>";
-			if(next_ch == 0 && (ch == 1 || ch == 3))
-				s += "<span> </span>";
-			else if(next_ch == 3 && ch == 1)
-				s += "<span> </span>";
 		}
 	}
 	return s;
