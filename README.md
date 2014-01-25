@@ -27,7 +27,7 @@ charch.js 中文排版工具
 
 - 在网页头部`</head>`之前加入如下代码：
 
-	<script type="text/javascript" src="charch.js"></script>
+		<script type="text/javascript" src="charch.js"></script>
   
 - 在需要排版的文章父元素（`<p>`的上层`<div>`）加入类`charch_post`。例如：
 
