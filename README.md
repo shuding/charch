@@ -2,6 +2,7 @@ charch.js 中文排版工具
 ======
 
 Demo 地址：[quietshu.github.io/charch/sample.html](http://quietshu.github.io/charch/sample.html)
+
 项目地址：[github.com/quietshu/charch](github.com/quietshu/charch)
 
 ### 特点
