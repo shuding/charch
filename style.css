@@ -1,18 +1,35 @@
 body{
 	position: absolute;
-	margin: 0;
-	padding: 0;
-	width: 300%;
+	width: auto;
 	height: 100%;
-	overflow-x: scroll;
+	width: 100%;
+	margin: 0;
 	overflow-y: hidden;
+	overflow-x: auto;
+	white-space: nowrap;
 }
 
 .sample_post{
 	display: inline-block;
-	max-width: 500px;
+	height: 88%;
+	overflow: scroll;
+	max-width: 600px;
 	margin: 10px 10px;
-	padding: 3px;
-	border: 1px solid;
+	padding: 10px 20px;
+	border: 1px solid #CCC;
 	vertical-align: top;
+	white-space: normal;
+}
+
+.sample_post_border{
+	display: inline-block;
+	height: 90%;
+	overflow: scroll;
+	margin: 20px;
+	padding: 20px 20px;
+	border: 1px solid #CCC;
+	vertical-align: top;
+	box-shadow: 0 1px 3px #999;
+	border-radius: 5px;
+	white-space: normal;
 }

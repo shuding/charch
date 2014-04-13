@@ -1,16 +1,19 @@
 .charch_paragraph{
 	text-align: justify;
 	text-indent: 2em;
-	margin: 0.5em 0 0.5em;
 	-webkit-font-smoothing: subpixel-antialiased !important;
-	font: normal 16px/1.70 "TIBch", "Classic Grotesque W01", "Helvetica Neue", Arial, "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, sans-serif;
+/*	font: normal 16px/1.70 "TIBch", "Classic Grotesque W01", "Helvetica Neue", Arial, "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, sans-serif;
 	color: #444;
 	margin-left: 4px;
-	margin-right: 16px;
+	margin-right: 16px;*/
 }
 
 .charch_span{
-	display: inline-block;
-	width: 16px;
-	text-indent: 0;
+	text-align: justify;
+	word-break: break-word;
+	white-space: pre-line;
+}
+
+.charch_letter_span{
+	vertical-align: baseline;
 }
