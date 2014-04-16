@@ -74,27 +74,25 @@ var charch_typeset_paragraph = function(p, t){
 }
 
 var chartype = function(ch){
-	if(ch <= '\u9FA5' && ch >= '\u4E00')
-		return 1;
-	if(ch <= '\uFFEF' && ch >= '\uFF00')
-		return 2;
-	if(ch <= '\u303F' && ch >= '\u3000')
-		return 2;
-	if(ch == '\u2014')
-		return 2;
-	if(ch == '\u2026')
-		return 2;
-	if(ch == ':'
-	|| ch == '/'	
-	|| ch == '+'
-	|| ch == '-'
-	|| ch == '*'
-	|| ch == '='
-	|| ch == '^'
-	|| ch == '%'
-	|| ch == '~')
-		return 3;
-	return 0;
+    // Other
+    // basic latin && extends: http://jrgraphix.net/r/Unicode/0020-007F
+    // Greek && Coptic && Arabic && ........
+    if(ch >= '\u0020' && ch <= '\u2bff')
+        return 0;
+
+    // escaped CJK Symbols
+    if(ch >= '\ufe30' && ch <= '\ufe6f')
+        return 1;
+    if(ch >= '\u3000' && ch <= '\u303f')
+        return 1;
+    if(ch >= '\uff00' && ch <= '\uff65')
+        return 1;
+
+    // CJK Charactars
+    if(ch >= '\u2e80')
+        return 2;
+
+    return 0;
 }
 
 var charch_content = function(str){
@@ -116,23 +114,19 @@ var charch_content = function(str){
 		ch = next_ch;
 		next_ch = (i + 1 == len ? -1 : chartype(str[i + 1]));
 		
-		if(str[i] == "\n"){
-			//s += "<p></p>"
-		}
+		if(str[i] == '\n'){
+            if(i && str[i - 1] != '\n')
+                s += '\n';
+            else if(i > 1 && str[i - 1] == '\n' && str[i - 2] != '\n')
+                s += '\n';
+        }
 		else{
-			if(pre_ch == 0 && (ch == 1 || ch == 3))
+			if(pre_ch == 0 && ch == 2)
 				s += "<span class='charch_letter_span'> </span>";
-			else if(pre_ch == 3 && ch == 1)
+			else if(pre_ch == 2 && ch == 0)
 				s += "<span class='charch_letter_span'> </span>";
-			if(ch == 2){
-				s += "<span class='charch_letter_span'>"+str[i]+"</span>";
-			}
 			else
 				s += "<span class='charch_letter_span'>"+str[i]+"</span>";
-			if(next_ch == 0 && (ch == 1 || ch == 3))
-				s += "<span class='charch_letter_span'> </span>";
-			else if(next_ch == 3 && ch == 1)
-				s += "<span class='charch_letter_span'> </span>";
 		}
 	}
 
