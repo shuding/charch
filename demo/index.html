@@ -6,28 +6,41 @@
 </head>
 <body>
 <style>
+  body {
+    position: absolute;
+    height: 100%;
+    overflow-y: hidden;
+  }
   #demo_box {
+    position: relative;
     border: 2px solid;
     padding: 10px 40px;
-    width: 500px;
-    height: 500px;
-    max-width: 1000px;
-    resize: both;
+    width: 300px;
+    height: 90%;
+    max-height: 700px;
+    resize: horizontal;
     overflow: auto;
+  }
+  .charch_note {
+    cursor: help;
+  }
+  a {
+    color: inherit;
   }
 </style>
 <div id="demo_box">
   <h1>Origin:</h1>
   <div>
-    <p>苹果公司的Lisa计划从<a href="#">乔布斯</a>控制的发展计划中中途被取消。但乔布斯立刻推出了Macintosh，最初把它预想为一种“廉价Lisa”。<span>Apple Macintosh在1984年以一个著名的<a href="#">超级杯</a>广告（基于乔治·奥韦尔的小说《一九八四》）开始投放市场，其中更宣布“在1月24日，苹果电脑将推出Macintosh。你将会见到为什么1984将不会成为‘1984’。”</span>这暗示了新的Mac和其“容易使用”的图形使用者界面将电脑和信息从公司和技术统治论者那里解放出来。苹果也大量生产由苹果雇员与之后的苹果人盖伊·川崎首创的苹果福音传道的思想。</p>
-    <p>史蒂夫·乔布斯、史蒂夫·沃茲尼克、罗纳德·韦恩创立于1976年4月1日建立了苹果公司，开发和销售个人计算机。该公司于1977年1月3日正式称为苹果电脑公司，并于2007年1月9日改名为苹果公司，以反应该公司将业务重点转向消费电子领域。</p>
+    <p>苹果公司的Lisa计划从<a href="#">乔布斯</a>控制的发展计划中中途被取消。<em>但乔布斯立刻推出了Macintosh</em>，最初把它预想为一种“廉价Lisa”。<span>Apple Macintosh在1984年以一个著名的<a href="#">超级杯</a>广告（基于乔治·奥韦尔的小说《一九八四》）开始投放市场，其中更宣布“在1月24日，苹果电脑将推出Macintosh。你将会见到为什么1984将不会成为‘1984’。”</span>这暗示了新的Mac和其“容易使用”的图形使用者界面将电脑和信息从公司和技术统治论者那里解放出来。苹果也大量生产由苹果雇员与之后的苹果人盖伊·川崎首创的苹果福音传道的思想。</p>
+    <p>史蒂夫·乔布斯、史蒂夫·沃茲尼克、罗纳德·韦恩创立于1976年4月1日建立了Apple，开发和销售个人计算机。该公司于1977年1月3日正式称为苹果电脑公司，并于2007年1月9日改名为苹果公司，以反应该公司将业务重点转向消费电子领域。</p>
   </div>
   <h1>Use charch.js:</h1>
   <div class="charch charch_indent charch_link">
-    <p class="charch_pseudo">苹果公司的Lisa计划从<a href="#">乔布斯</a>控制的发展计划中中途被取消。但乔布斯立刻推出了Macintosh，最初把它预想为一种“廉价Lisa”。<span>Apple Macintosh在1984年以一个著名的<a href="#">超级杯</a>广告（基于乔治·奥韦尔的小说《一九八四》）开始投放市场，其中更宣布“在1月24日，苹果电脑将推出Macintosh。你将会见到为什么1984将不会成为‘1984’。”</span>这暗示了新的Mac和其“容易使用”的图形使用者界面将电脑和信息从公司和技术统治论者那里解放出来。苹果也大量生产由苹果雇员与之后的苹果人盖伊·川崎首创的苹果福音传道的思想。</p>
-    <p>史蒂夫·乔布斯、史蒂夫·沃茲尼克、罗纳德·韦恩创立于1976年4月1日建立了苹果公司，开发和销售个人计算机。该公司于1977年1月3日正式称为苹果电脑公司，并于2007年1月9日改名为苹果公司，以反应该公司将业务重点转向消费电子领域。</p>
+    <p class="charch_pseudo"><span class="charch_note" data-note="首字加大">苹果</span>公司的Lisa计划<span class="charch_note" data-note="超链接自动添加空格">从<a href="#">乔布斯</a>控</span>制的发展计划中中途被取消。<span class="charch_note" data-note="着重号"><em>但乔布斯立刻推出了Macintosh</em></span>，最初把它预想为一种“廉价Lisa”。<span>Apple Macintosh在1984年以一个著名的<a href="#">超级杯</a>广告（基于乔治·奥韦尔的小说《一九八四》）开始投放市场，其中更宣布“在1月24日，苹果电脑将推出Macintosh。你将会见到为什么1984将不会成<span class="charch_note" data-note="直角引号">为‘1984’。”</span></span>这暗示了新的Mac和其“容易使用”的图形使用者界面将电脑和信息从公司和技术统治论者那里解放出来。苹果也大量生产由苹果雇员与之后的苹果人盖伊·川崎首创的苹果福音传道的思想。</p>
+    <p>史蒂夫·乔布斯、史蒂夫·沃茲尼克、罗纳德·韦恩创立于1976年4月1日建立了Apple，开发和销售个人计算机。该公司于1977年1月3日正式称为苹果电脑公司，并于2007年1月9日改名为苹果公司，以反应该公司将业务重点转向消费电子领域。</p>
   </div>
 </div>
+<div id="info_box"></div>
 <script src="./../src/charch.js"></script>
 </body>
 </html>
