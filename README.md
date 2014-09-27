@@ -1,6 +1,6 @@
 charch.js 中文排版工具
 ======
-Demo: [shud.in/charch/demo](shud.in/charch/demo)
+Demo: [shud.in/charch/demo](http://shud.in/charch/demo)
 
 ### 致谢
 [https://github.com/vinta/paranoid-auto-spacing](https://github.com/vinta/paranoid-auto-spacing)
