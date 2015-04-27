@@ -1,5 +1,8 @@
 charch.js 中文排版工具
 ======
+
+[!![npm-v](https://img.shields.io/npm/v/charch.svg?style=flat-square)](https://www.npmjs.com/package/charch) [!![npm-l](https://img.shields.io/npm/l/charch.svg?style=flat-square)](https://www.npmjs.com/package/charch) [![npm-dm](https://img.shields.io/npm/dm/charch.svg?style=flat-square)](https://www.npmjs.com/package/charch)
+
 Demo: [shud.in/charch/demo](http://shud.in/charch/demo)
 
 ## 致谢
@@ -12,6 +15,10 @@ Demo: [shud.in/charch/demo](http://shud.in/charch/demo)
 - 协议：[The MIT License](http://opensource.org/licenses/MIT)
 
 ## 用法
+
+NPM: 
+
+	`$ npm install charch`
 
 1. 在 `body` **底部**插入此脚本：
 
