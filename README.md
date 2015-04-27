@@ -1,7 +1,7 @@
 charch.js 中文排版工具
 ======
 
-[!![npm-v](https://img.shields.io/npm/v/charch.svg?style=flat-square)](https://www.npmjs.com/package/charch) [!![npm-l](https://img.shields.io/npm/l/charch.svg?style=flat-square)](https://www.npmjs.com/package/charch) [![npm-dm](https://img.shields.io/npm/dm/charch.svg?style=flat-square)](https://www.npmjs.com/package/charch)
+[![npm-v](https://img.shields.io/npm/v/charch.svg?style=flat-square)](https://www.npmjs.com/package/charch) [![npm-l](https://img.shields.io/npm/l/charch.svg?style=flat-square)](https://www.npmjs.com/package/charch) [![npm-dm](https://img.shields.io/npm/dm/charch.svg?style=flat-square)](https://www.npmjs.com/package/charch)
 
 Demo: [shud.in/charch/demo](http://shud.in/charch/demo)
 
