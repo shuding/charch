@@ -11,36 +11,99 @@
     height: 100%;
     overflow-y: hidden;
   }
-  #demo_box {
+  .demo-box {
     position: relative;
     border: 2px solid;
     padding: 10px 40px;
-    width: 300px;
-    height: 90%;
+    width: 900px;
+    height: 95%;
     max-height: 700px;
     resize: horizontal;
     overflow: auto;
   }
-  .charch_note {
-    cursor: help;
+  .demo-box > div {
+    width: 50%;
+    padding: 0 10px;
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
   }
   a {
-    color: inherit;
+    color: royalblue;
+  }
+  code {
+    font-size: 15px;
+    line-height: 1.5em;
+  }
+  pre {
+    white-space: pre-wrap;
+  }
+  label {
+    cursor: pointer;
+    color: royalblue;
+    border-bottom: 2px solid;
+  }
+  #toggle-source {
+    visibility: hidden;
+  }
+  .source {
+    display: none;
+  }
+  #toggle-source:checked ~ div .source {
+    display: inherit;
+  }
+  #toggle-source:checked ~ div .content {
+    display: none;
   }
 </style>
-<div id="demo_box">
-  <h1>Origin:</h1>
+
+<div class="demo-box">
+  <input type="checkbox" id="toggle-source">
+  <h3><label for="toggle-source">toggle source</label></h3>
   <div>
-    <p>苹果公司的Lisa计划从<a href="#">乔布斯</a>控制的发展计划中中途被取消。<em>但乔布斯立刻推出了Macintosh</em>，最初把它预想为一种“廉价Lisa”。<span>Apple Macintosh在1984年以一个著名的<a href="#">超级杯</a>广告（基于乔治·奥韦尔的小说《一九八四》）开始投放市场，其中更宣布“在1月24日，苹果电脑将推出Macintosh。你将会见到为什么1984将不会成为‘1984’。”</span>这暗示了新的Mac和其“容易使用”的图形使用者界面将电脑和信息从公司和技术统治论者那里解放出来。苹果也大量生产由苹果雇员与之后的苹果人盖伊·川崎首创的苹果福音传道的思想。</p>
-    <p>史蒂夫·乔布斯、史蒂夫·沃茲尼克、罗纳德·韦恩创立于1976年4月1日建立了Apple，开发和销售个人计算机。该公司于1977年1月3日正式称为苹果电脑公司，并于2007年1月9日改名为苹果公司，以反应该公司将业务重点转向消费电子领域。</p>
+    <h2>Raw HTML:</h2>
+    <div class="content">
+      <p>苹果公司的Lisa计划从<a href="#">乔布斯</a>控制的发展计划中中途被取消。<em>但乔布斯立刻推出了Macintosh</em>，最初把它预想为一种“廉价Lisa”。<span>Apple Macintosh在1984年以一个著名的<a href="#">超级杯</a>广告（基于乔治·奥韦尔的小说《一九八四》）开始投放市场，其中更宣布“在1月24日，苹果电脑将推出Macintosh。你将会见到为什么1984将不会成为‘1984’。”</span>这暗示了新的Mac和其“容易使用”的图形使用者界面将电脑和信息从公司和技术统治论者那里解放出来。苹果也大量生产由苹果雇员与之后的苹果人盖伊·川崎首创的苹果福音传道的思想。</p>
+      <p>史蒂夫·乔布斯、史蒂夫·沃茲尼克、罗纳德·韦恩创立于1976年4月1日建立了Apple，开发和销售个人计算机。该公司于1977年1月3日正式称为苹果电脑公司，并于2007年1月9日改名为苹果公司，以反应该公司将业务重点转向消费电子领域。</p>
+      <p>到2014年6月，苹果公司拥有14个国家的425间零售商店，还有线上苹果商店、iTunes商店。iTunes商店是世界最大音乐零售商。苹果公司是市值最高的公共交易公司，到2014年6月大约拥有市值6000亿美元，到同年11月更是歷史上首家突破7000億美元的公司。截至2012年9月29日，苹果公司全球拥有永久全职员工72800名，临时全职员工3300名。2013年全球总收入1709亿美元。截至2014年1季度，苹果公司五年平均增长率销售额39%，利润率45%。2013年5月苹果公司首次进入财富500强公司名单前10名，比2012年上升11位，位列第6名。</p>
+    </div>
+    <div class="source">
+      <code>
+
+<!-- HTML generated using hilite.me --><div><pre><span style="color: #007700">&lt;div&gt;</span>
+  <span style="color: #007700">&lt;p&gt;</span>苹果公司的Lisa计划从<span style="color: #007700">&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;#&quot;</span><span style="color: #007700">&gt;</span>乔布斯<span style="color: #007700">&lt;/a&gt;</span>控制的发展计划中中途被取消。<span style="color: #007700">&lt;em&gt;</span>但乔布斯立刻推出了Macintosh<span style="color: #007700">&lt;/em&gt;</span>，最初把它预想为一种“廉价Lisa”。<span style="color: #007700">&lt;span&gt;</span>Apple Macintosh在1984年以一个著名的<span style="color: #007700">&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;#&quot;</span><span style="color: #007700">&gt;</span>超级杯<span style="color: #007700">&lt;/a&gt;</span>广告（基于乔治·奥韦尔的小说《一九八四》）开始投放市场，其中更宣布“在1月24日，苹果电脑将推出Macintosh。你将会见到为什么1984将不会成为‘1984’。”<span style="color: #007700">&lt;/span&gt;</span>这暗示了新的Mac和其“容易使用”的图形使用者界面将电脑和信息从公司和技术统治论者那里解放出来。苹果也大量生产由苹果雇员与之后的苹果人盖伊·川崎首创的苹果福音传道的思想。<span style="color: #007700">&lt;/p&gt;</span>
+  <span style="color: #007700">&lt;p&gt;</span>史蒂夫·乔布斯、史蒂夫·沃茲尼克、罗纳德·韦恩创立于1976年4月1日建立了Apple，开发和销售个人计算机。该公司于1977年1月3日正式称为苹果电脑公司，并于2007年1月9日改名为苹果公司，以反应该公司将业务重点转向消费电子领域。<span style="color: #007700">&lt;/p&gt;</span>
+  <span style="color: #007700">&lt;p&gt;</span>到2014年6月，苹果公司拥有14个国家的425间零售商店，还有线上苹果商店、iTunes商店。iTunes商店是世界最大音乐零售商。苹果公司是市值最高的公共交易公司，到2014年6月大约拥有市值6000亿美元，到同年11月更是歷史上首家突破7000億美元的公司。截至2012年9月29日，苹果公司全球拥有永久全职员工72800名，临时全职员工3300名。2013年全球总收入1709亿美元。截至2014年1季度，苹果公司五年平均增长率销售额39%，利润率45%。2013年5月苹果公司首次进入财富500强公司名单前10名，比2012年上升11位，位列第6名。<span style="color: #007700">&lt;/p&gt;</span>
+<span style="color: #007700">&lt;/div&gt;</span>
+</pre></div>
+
+      </code>
+    </div>
   </div>
-  <h1>Use charch.js:</h1>
-  <div class="charch charch_indent charch_link">
-    <p class="charch_pseudo"><span class="charch_note" data-note="首字加大">苹果</span>公司的Lisa计划<span class="charch_note" data-note="超链接自动添加空格">从<a href="#">乔布斯</a>控</span>制的发展计划中中途被取消。<span class="charch_note" data-note="着重号"><em>但乔布斯立刻推出了Macintosh</em></span>，最初把它预想为一种“廉价Lisa”。<span>Apple Macintosh在1984年以一个著名的<a href="#">超级杯</a>广告（基于乔治·奥韦尔的小说《一九八四》）开始投放市场，其中更宣布“在1月24日，苹果电脑将推出Macintosh。你将会见到为什么1984将不会成<span class="charch_note" data-note="直角引号">为‘1984’。”</span></span>这暗示了新的Mac和其“容易使用”的图形使用者界面将电脑和信息从公司和技术统治论者那里解放出来。苹果也大量生产由苹果雇员与之后的苹果人盖伊·川崎首创的苹果福音传道的思想。</p>
-    <p>史蒂夫·乔布斯、史蒂夫·沃茲尼克、罗纳德·韦恩创立于1976年4月1日建立了Apple，开发和销售个人计算机。该公司于1977年1月3日正式称为苹果电脑公司，并于2007年1月9日改名为苹果公司，以反应该公司将业务重点转向消费电子领域。</p>
+  <div>
+    <h2>+ charch.js:</h2>
+    <div class="content charch charch-indent charch-link charch-cjk-latin-space charch-link-space charch-bracket-replace charch-line-height">
+      <p class="charch-pseudo">苹果公司的Lisa计划从<a href="#">乔布斯</a>控制的发展计划中中途被取消。<em>但乔布斯立刻推出了Macintosh</em>，最初把它预想为一种“廉价Lisa”。<span>Apple Macintosh在1984年以一个著名的<a href="#">超级杯</a>广告（基于乔治·奥韦尔的小说《一九八四》）开始投放市场，其中更宣布“在1月24日，苹果电脑将推出Macintosh。你将会见到为什么1984将不会成为‘1984’。”</span>这暗示了新的Mac和其“容易使用”的图形使用者界面将电脑和信息从公司和技术统治论者那里解放出来。苹果也大量生产由苹果雇员与之后的苹果人盖伊·川崎首创的苹果福音传道的思想。</p>
+      <p>史蒂夫·乔布斯、史蒂夫·沃茲尼克、罗纳德·韦恩创立于1976年4月1日建立了Apple，开发和销售个人计算机。该公司于1977年1月3日正式称为苹果电脑公司，并于2007年1月9日改名为苹果公司，以反应该公司将业务重点转向消费电子领域。</p>
+      <p>到2014年6月，苹果公司拥有14个国家的425间零售商店，还有线上苹果商店、iTunes商店。iTunes商店是世界最大音乐零售商。苹果公司是市值最高的公共交易公司，到2014年6月大约拥有市值6000亿美元，到同年11月更是歷史上首家突破7000億美元的公司。截至2012年9月29日，苹果公司全球拥有永久全职员工72800名，临时全职员工3300名。2013年全球总收入1709亿美元。截至2014年1季度，苹果公司五年平均增长率销售额39%，利润率45%。2013年5月苹果公司首次进入财富500强公司名单前10名，比2012年上升11位，位列第6名。</p>
+    </div>
+    <div class="source">
+      <code>
+
+        <!-- HTML generated using hilite.me --><div><pre><span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;content charch charch-indent charch-link charch-cjk-latin-space charch-link-space charch-bracket-replace charch-line-height&quot;</span><span style="color: #007700">&gt;</span>
+  <span style="color: #007700">&lt;p</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;charch-pseudo&quot;</span><span style="color: #007700">&gt;</span>苹果公司的Lisa计划从<span style="color: #007700">&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;#&quot;</span><span style="color: #007700">&gt;</span>乔布斯<span style="color: #007700">&lt;/a&gt;</span>控制的发展计划中中途被取消。<span style="color: #007700">&lt;em&gt;</span>但乔布斯立刻推出了Macintosh<span style="color: #007700">&lt;/em&gt;</span>，最初把它预想为一种“廉价Lisa”。<span style="color: #007700">&lt;span&gt;</span>Apple Macintosh在1984年以一个著名的<span style="color: #007700">&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;#&quot;</span><span style="color: #007700">&gt;</span>超级杯<span style="color: #007700">&lt;/a&gt;</span>广告（基于乔治·奥韦尔的小说《一九八四》）开始投放市场，其中更宣布“在1月24日，苹果电脑将推出Macintosh。你将会见到为什么1984将不会成为‘1984’。”<span style="color: #007700">&lt;/span&gt;</span>这暗示了新的Mac和其“容易使用”的图形使用者界面将电脑和信息从公司和技术统治论者那里解放出来。苹果也大量生产由苹果雇员与之后的苹果人盖伊·川崎首创的苹果福音传道的思想。<span style="color: #007700">&lt;/p&gt;</span>
+  <span style="color: #007700">&lt;p&gt;</span>史蒂夫·乔布斯、史蒂夫·沃茲尼克、罗纳德·韦恩创立于1976年4月1日建立了Apple，开发和销售个人计算机。该公司于1977年1月3日正式称为苹果电脑公司，并于2007年1月9日改名为苹果公司，以反应该公司将业务重点转向消费电子领域。<span style="color: #007700">&lt;/p&gt;</span>
+  <span style="color: #007700">&lt;p&gt;</span>到2014年6月，苹果公司拥有14个国家的425间零售商店，还有线上苹果商店、iTunes商店。iTunes商店是世界最大音乐零售商。苹果公司是市值最高的公共交易公司，到2014年6月大约拥有市值6000亿美元，到同年11月更是歷史上首家突破7000億美元的公司。截至2012年9月29日，苹果公司全球拥有永久全职员工72800名，临时全职员工3300名。2013年全球总收入1709亿美元。截至2014年1季度，苹果公司五年平均增长率销售额39%，利润率45%。2013年5月苹果公司首次进入财富500强公司名单前10名，比2012年上升11位，位列第6名。<span style="color: #007700">&lt;/p&gt;</span>
+<span style="color: #007700">&lt;/div&gt;</span>
+</pre></div>
+
+      </code>
+    </div>
   </div>
 </div>
-<div id="info_box"></div>
-<script src="./../src/charch.js"></script>
+
+<script src="./../charch.build.js"></script>
+<script>Charch(document)</script>
 </body>
 </html>

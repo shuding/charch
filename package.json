@@ -1,0 +1,30 @@
+{
+  "name": "charch",
+  "version": "0.1.0",
+  "description": "Chinese web typography library.",
+  "main": "index.js",
+  "scripts": {
+    "install": "browserify index.js -o charch.build.js -s Charch",
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quietshu/charch.git"
+  },
+  "keywords": [
+    "Chinese",
+    "typography",
+    "typeset",
+    "CJK",
+    "web"
+  ],
+  "author": "Shu Ding",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/quietshu/charch/issues"
+  },
+  "homepage": "https://github.com/quietshu/charch",
+  "devDependencies": {
+    "browserify": "^11.2.0"
+  }
+}
