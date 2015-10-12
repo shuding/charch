@@ -5,7 +5,7 @@ charch.js 中文排版工具
 [![npm-l](https://img.shields.io/npm/l/charch.svg?style=flat-square)](https://www.npmjs.com/package/charch)
 [![npm-dm](https://img.shields.io/npm/dm/charch.svg?style=flat-square)](https://www.npmjs.com/package/charch)
 
-Demo: [quietshu.github.io/charch/demo](quietshu.github.io/charch/demo)
+Demo: [quietshu.github.io/charch/demo](//quietshu.github.io/charch/demo)
 
 ## 用法
 
