@@ -35,7 +35,7 @@ function Pangu() {
         function can_ignore_node(node) {
             var parent_node = node.parentNode;
             while (parent_node && parent_node.nodeName && parent_node.nodeName.search(/^(html|head|body|#document)$/i) === -1) {
-                if ((parent_node.getAttribute('contenteditable') === 'true') || (parent_node.getAttribute('g_editable') === 'true') || (parent_node.nodeName.search(ignore_tags) >= 0)) {
+                if ((isNotChinese(node)) || (isNotChinese(parent_node)) || (parent_node.getAttribute('contenteditable') === 'true') || (parent_node.getAttribute('g_editable') === 'true') || (parent_node.nodeName.search(ignore_tags) >= 0)) {
                     return true;
                 } else {
                     parent_node = parent_node.parentNode;
@@ -43,6 +43,12 @@ function Pangu() {
             }
 
             return false;
+        }
+        
+        function isNotChinese(node) {
+            var re=/[^\u4e00-\u9fa5]/;
+            if(re.test(node.textContent)) return false;
+            return true;
         }
 
         /**
