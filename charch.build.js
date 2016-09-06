@@ -23,8 +23,8 @@ function Charch(document) {
 
     function isChinese(node) {
         var re=/[^\u4e00-\u9fa5]/;
-        if(re.test(node.textContent)) return true;
-        return false;
+        if(re.test(node.textContent)) return false;
+        return true;
     }
 
     var insert_style_sheet = function () {
