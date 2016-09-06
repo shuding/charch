@@ -85,8 +85,8 @@ function Charch(document) {
             s      = s.replace(/‘/g, "『");
             s      = s.replace(/’/g, "』");
             s      = s.replace(/([A-z]+)』/g, "$1'");
-            s      = s.replace(/([A-z]+)」.*?([A-z]+)/g, "$1”$2");
-            s      = s.replace(/([A-z]+)「.*?([A-z]+)/g, "$1“$2");
+            s      = s.replace(/([A-z]+)」(.*?)([A-z]+)/g, "$1”$2$3");
+            s      = s.replace(/([A-z]+)「(.*?)([A-z]+)/g, "$1“$2$3");
             t.data = s;
             return 0;
         });
