@@ -14,7 +14,6 @@ function Charch(document) {
 
     function isChinese(node) {
         var re=/[^\u4e00-\u9fa5]/;
-        console.log(node.textContent);
         if(re.test(node.textContent)) return false;
         return true;
     }
