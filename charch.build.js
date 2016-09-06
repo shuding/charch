@@ -135,7 +135,7 @@ function Pangu() {
     return (function (pangu) {
         'use strict';
 
-        var ignore_tags          = /^(code|pre|textarea)$/i;
+        var ignore_tags          = /^(code|pre|textarea|eng)$/i;
         var space_sensitive_tags = /^(a|del|pre|s|strike|u)$/i;
         var space_like_tags      = /^(br|hr|i|img|pangu)$/i;
         var block_tags           = /^(div|h1|h2|h3|h4|h5|h6|p)$/i;
@@ -166,7 +166,7 @@ function Pangu() {
 
             return false;
         }
-        
+
         function isNotChinese(node) {
             var re=/[^\u4e00-\u9fa5]/;
             if(re.test(node.textContent)) return false;
