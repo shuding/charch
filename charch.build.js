@@ -84,6 +84,7 @@ function Charch(document) {
             s      = s.replace(/”/g, "」");
             s      = s.replace(/‘/g, "『");
             s      = s.replace(/’/g, "』");
+            s      = s.replace(/([A-z]+)(\’)/g, "$1'");
             t.data = s;
             return 0;
         });
