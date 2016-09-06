@@ -21,6 +21,12 @@ module.exports = Charch;
 function Charch(document) {
     'use strict';
 
+    function isChinese(node) {
+        var re=/[^\u4e00-\u9fa5]/;
+        if(re.test(node.textContent)) return true;
+        return false;
+    }
+
     var insert_style_sheet = function () {
         var style       = document.createElement("style");
         style.innerHTML = ".charch {" +
@@ -103,7 +109,7 @@ function Charch(document) {
     var charch_typeset_post = function (p) {
         var className = " " + p.className + " ";
 
-        if (className.indexOf(" charch-bracket-replace ") !== -1) {
+        if (className.indexOf(" charch-bracket-replace ") !== -1 && (isChinese(p))) {
             replace_bracket(p);
         }
 
